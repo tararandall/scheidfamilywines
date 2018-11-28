@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<v65:metaTags></v65:metaTags>
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+	<script type="text/javascript" src="assets/js/modernizr.custom.79639.js"></script> 
+	<!--//Vin65 QuickLaunch//-->
+	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>	
+	<!--//Vin65 QuickLaunch//-->
+	<v65:css files="/assets/css/screen.min.css"></v65:css>	
+	<v65:css files="/assets/css/swatchbook-demo.css"></v65:css>
+	<v65:css files="/assets/css/swatchbook.css"></v65:css>
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->	
+	</head>
+	<body>
+		
+	<header class="primary v65-group">
+	<div class="container">
+		<div class="col-md-12">
+			<div id="user-tools">
+				<v65:modalCart></v65:modalCart>	
+				<v65:login></v65:login>
+			</div><!--/user-tools-->
+			
+			<nav class="mainMenu">
+				<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
+				<a href="#footerMenu" class="footerMenuLink"><i class="icon-menu"></i></a>
+			</nav>
+			</div>
+		</div>
+	</header>	
+		<div class="container">
+		<div class="col-md-12">
+			<section class="main">
+			
+				<div id="sb-container" class="sb-container">
+				
+					<div>
+						<span class="sb-icon icon-cog"></span>
+						<h4><span>All Settings</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-flight"></span>
+						<h4><span>User Modes</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-eye"></span>
+						<h4><span>Browse All</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-install"></span>
+						<h4><span>Install App</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-bag"></span>
+						<h4><span>Productivity</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-globe"></span>
+						<h4><span>All Options</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-picture"></span>
+						<h4><span>User Images</span></h4>											
+					</div>	
+					<div>
+						<span class="sb-icon icon-video"></span>
+						<h4><span>User Videos</span></h4>											
+					</div>	
+					<div>
+						<span class="sb-icon icon-download"></span>
+						<h4><span>Download App</span></h4>											
+					</div>	
+					<div>
+						<span class="sb-icon icon-mobile"></span>
+						<h4><span>Mobile Theme</span></h4>											
+					</div>
+					<div>
+						<span class="sb-icon icon-camera"></span>
+						<h4><span>Digital App</span></h4>											
+					</div>
+					<div>
+						<h4><span>Profile</span></h4>
+						<span class="sb-toggle">Click to open/close</span>
+						<h5><span>We &hearts; color</span></h5>											
+					</div>
+					
+					
+				</div><!-- sb-container -->
+				
+			</section>
+			</div>
+        </div>    
+
+	<footer>
+		<a name="footerMenu"></a>
+
+		<nav>
+			<v65:layoutFooterNav></v65:layoutFooterNav>
+		</nav>
+
+		<div class="footerTools"> 
+			<v65:contentBlock group="Footer Contact Details"></v65:contentBlock>
+			
+			<ul class="legal">
+				<li><v65:copyright></v65:copyright></li>
+				<li><v65:vin65Accolade></v65:vin65Accolade></li>
+			</ul>
+		</div><!--/footerTools-->
+	</footer>		
+		<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js"></v65:js>
+		<!--//Vin65 QuickLaunchFooter//-->
+		<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
+		<!--//Vin65 QuickLaunchFooter//-->
+		<script type="text/javascript" src="assets/js/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#sb-container' ).swatchbook( {
+					// number of degrees that is between each item
+					angleInc : 15,
+					neighbor : 15,
+					// if it should be closed by default
+					initclosed : true,
+					// index of the element that when clicked, triggers the open/close function
+					// by default there is no such element
+					closeIdx : 11
+				} );
+			
+			});
+		</script>
+    </body>
+</html>
